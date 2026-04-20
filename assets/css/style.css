@@ -588,15 +588,20 @@ body.mobile-menu-open{overflow: hidden;}
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  border-bottom: 10px solid transparent;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 .plp-practice-card:hover{
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(200, 169, 107, .55);
+  border-color: #3e3e3e;
 }
 .plp-practice-card h3{color: var(--color-primary);}
 .plp-practice-card p{color: var(--color-muted);}
+.exprt-crl{ box-shadow: inset 2px 2px #3e3e3e}
+.plp-practice-card:hover .exprt-crl{background-color:#3e3e3e; transition: var(--transition);color: white !important;}
+
+
 
 
   /* Leadership Spotlight  */
