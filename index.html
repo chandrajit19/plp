@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Pinaka Law Partners</title>
+    <meta name="description" content="Pinaka Law Partners">
+    <script>
+      (function () {
+        try {
+          var key = "plp_disclaimer_ack_v1";
+          var isAccepted = window.localStorage.getItem(key) === "accepted";
+          document.documentElement.setAttribute("data-plp-disclaimer", isAccepted ? "accepted" : "pending");
+        } catch (error) {
+          document.documentElement.setAttribute("data-plp-disclaimer", "pending");
+        }
+      })();
+    </script>
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    >
+
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    >
+
+    <!-- SWIPER SLIDER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    >
+
+    <!--BOOTSTRAP CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <!-- DISCLAIMER STRIP -->
+    <div class="plp-disclaimer-gate" id="plp-disclaimer-gate" aria-hidden="true">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <section
+              class="plp-disclaimer-card p-4 p-md-5"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="plp-disclaimer-title"
+            >
+              <p class="plp-kicker mb-2">Legal Notice</p>
+              <h1 class="h3 mb-3" id="plp-disclaimer-title">Disclaimer</h1>
+              <p class="mb-0">
+                The information on this website is provided only in response to a specific request for general information about Pinaka Law Partners. It is not legal advice and does not create a lawyer-client relationship. By continuing to browse, you acknowledge that you are seeking information for your own knowledge and use. For legal issues, independent legal counsel should be sought
+              </p>
+
+              <div class="d-flex flex-column flex-sm-row justify-content-sm-end gap-2 mt-4">
+                <button type="button" class="btn btn-outline" data-disclaimer-decline>
+                  Disagree
+                </button>
+                <button type="button" class="btn btn-gold" data-disclaimer-accept>
+                  Agree & Continue
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="wrap-h-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-inner">
+              <!-- SITE LOGO -->
+
+              <div>
+                <a href="index.html"
+                  ><img
+                    class="site-logo"
+                    src="assets/images/site-logo.webp"
+                    width="250"
+                    height="160"
+                    alt="Pinaka Law Partners logo"
+                ></a>
+              </div>
+
+              <!-- NAV MENU -->
+              <nav
+                class="nav-menu d-none d-lg-block"
+                aria-label="Main navigation"
+              >
+                <ul class="nav-list">
+                  <li><a class="nav-link-main" href="index.html">Home</a></li>
+
+                  <li class="has-dropdown" data-dropdown>
+                    <button
+                      class="nav-dd-toggle nav-link-main"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="about-dropdown"
+                    >
+                      Firm
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu-custom"
+                      id="about-dropdown"
+                      aria-label="About Us submenu"
+                    >
+                      <li>
+                        <a href="our-firm.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          About</a
+                        >
+                      </li>
+                      <li>
+                        <a href="vision-values.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Leadership</a
+                        >
+                      </li>
+                      <li>
+                        <a href="governance.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Governance</a
+                        >
+                      </li>
+                      <li>
+                        <a href="why-choose-us.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Why Choose Us</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- 
+                  <li class="has-dropdown" data-dropdown>
+                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false" aria-controls="leadership-dropdown">
+                      Leadership
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu-custom" id="leadership-dropdown" aria-label="Leadership submenu">
+                      <li><a href="managing-partner.html"><span><i class="fa-solid fa-angles-right"></i></span> Managing Partner</a></li>
+                      <li><a href="leadership-team.html"><span><i class="fa-solid fa-angles-right"></i></span> Leadership Team</a></li>
+                      <li><a href="founders-message.html"><span><i class="fa-solid fa-angles-right"></i></span> Founder's Message</a></li>
+                    </ul>
+                  </li> -->
+
+                  <li class="has-dropdown" data-dropdown>
+                    <button
+                      class="nav-dd-toggle nav-link-main"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="expertise-dropdown"
+                    >
+                      Expertise
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu-custom"
+                      id="expertise-dropdown"
+                      aria-label="Expertise submenu"
+                    >
+                      <li>
+                        <a href="criminal-law.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Criminal Law</a
+                        >
+                      </li>
+                      <li>
+                        <a href="ndps-matters.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          NDPS Matters</a
+                        >
+                      </li>
+                      <li>
+                        <a href="civil-litigation.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Civil Litigation</a
+                        >
+                      </li>
+                      <li>
+                        <a href="matrimonial-law.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Matrimonial Law</a
+                        >
+                      </li>
+                      <li>
+                        <a href="cyber-crime.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Cyber Crime</a
+                        >
+                      </li>
+                      <li>
+                        <a href="corporate-advisory.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Corporate Advisory</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown" data-dropdown>
+                    <button
+                      class="nav-dd-toggle nav-link-main"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="team-dropdown"
+                    >
+                      Team
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu-custom"
+                      id="team-dropdown"
+                      aria-label="Team submenu"
+                    >
+                      <li>
+                        <a href="partners.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Partners</a
+                        >
+                      </li>
+                      <li>
+                        <a href="management-committee.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Management Committee</a
+                        >
+                      </li>
+                      <li>
+                        <a href="associates.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Associates</a
+                        >
+                      </li>
+                      <li>
+                        <a href="advisors.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Advisors</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown" data-dropdown>
+                    <button
+                      class="nav-dd-toggle nav-link-main"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="insights-dropdown"
+                    >
+                      Insights
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu-custom"
+                      id="insights-dropdown"
+                      aria-label="Insights submenu"
+                    >
+                      <li>
+                        <a href="in-the-spotlight.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          In The Spotlight</a
+                        >
+                      </li>
+                      <li>
+                        <a href="firm-updates.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Firm Updates</a
+                        >
+                      </li>
+                      <li>
+                        <a href="media-publications.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Media & Publications</a
+                        >
+                      </li>
+                      <li>
+                        <a href="articles.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Articles</a
+                        >
+                      </li>
+                      <li>
+                        <a href="events-conferences.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Events & Conferences</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown" data-dropdown>
+                    <button
+                      class="nav-dd-toggle nav-link-main"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="career-dropdown"
+                    >
+                      Career
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu-custom"
+                      id="career-dropdown"
+                      aria-label="Career submenu"
+                    >
+                      <li>
+                        <a href="join-us.html">
+                          <span><i class="fa-solid fa-angles-right"></i></span>
+                          Join Us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="happiness-at-plp.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Happiness @ PLP</a
+                        >
+                      </li>
+                      <li>
+                        <a href="culture-gallery.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Culture Gallery</a
+                        >
+                      </li>
+                      <li>
+                        <a href="open-positions.html"
+                          ><span><i class="fa-solid fa-angles-right"></i></span>
+                          Open Positions</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="nav-link-main" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- CTA -->
+              <div class="cta d-none d-lg-block">
+                <a
+                  class="btn"
+                  href="tel:+917289934281"
+                  aria-label="Call us at +91 72899 34281"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                  +917289934281
+                </a>
+              </div>
+
+              <!-- HAMBURGER MENU-->
+              <div class="hamburger-menu d-block d-lg-none">
+                <button
+                  class="hamburger-box"
+                  type="button"
+                  aria-label="Toggle menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-nav-panel"
+                >
+                  <span class="hamburger-line-1"></span>
+                  <span class="hamburger-line-2"></span>
+                  <span class="hamburger-line-3"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVBAR -->
+    <div class="mobile-nav-shell d-lg-none" id="mobile-nav-shell" hidden>
+      <button
+        class="mobile-nav-backdrop"
+        type="button"
+        aria-label="Close mobile menu"
+      ></button>
+
+      <aside
+        class="mobile-nav-panel"
+        id="mobile-nav-panel"
+        aria-label="Mobile navigation"
+      >
+        <div class="mobile-nav-top">
+          <a
+            href="index.html"
+            class="mobile-nav-logo-wrap"
+            aria-label="Go to homepage"
+          >
+            <img
+              class="mobile-nav-logo"
+              src="assets/images/site-logo.webp"
+              width="180"
+              height="115"
+              alt="Pinaka Law Partners logo"
+            >
+          </a>
+        </div>
+
+        <nav class="mobile-nav-menu" aria-label="Mobile main navigation">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link" href="index.html">Home</a></li>
+
+            <li>
+              <details class="mobile-submenu">
+                <summary>
+                  About Us
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </summary>
+                <ul>
+                  <li><a href="our-firm.html">Our Firm</a></li>
+                  <li><a href="vision-values.html">Vision & Values</a></li>
+                  <li><a href="governance.html">Governance</a></li>
+                  <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                </ul>
+              </details>
+            </li>
+            
+
+            <li>
+              <details class="mobile-submenu">
+                <summary>
+                  Expertise
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </summary>
+                <ul>
+                  <li><a href="criminal-law.html">Criminal Law</a></li>
+                  <li><a href="ndps-matters.html">NDPS Matters</a></li>
+                  <li><a href="civil-litigation.html">Civil Litigation</a></li>
+                  <li><a href="matrimonial-law.html">Matrimonial Law</a></li>
+                  <li><a href="cyber-crime.html">Cyber Crime</a></li>
+                  <li>
+                    <a href="corporate-advisory.html">Corporate Advisory</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="mobile-submenu">
+                <summary>
+                  Team <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </summary>
+                <ul>
+                  <li><a href="partners.html">Partners</a></li>
+                  <li>
+                    <a href="management-committee.html">Management Committee</a>
+                  </li>
+                  <li><a href="associates.html">Associates</a></li>
+                  <li><a href="advisors.html">Advisors</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="mobile-submenu">
+                <summary>
+                  Insights
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </summary>
+                <ul>
+                  <li><a href="in-the-spotlight.html">In The Spotlight</a></li>
+                  <li><a href="firm-updates.html">Firm Updates</a></li>
+                  <li>
+                    <a href="media-publications.html">Media & Publications</a>
+                  </li>
+                  <li><a href="articles.html">Articles</a></li>
+                  <li>
+                    <a href="events-conferences.html">Events & Conferences</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="mobile-submenu">
+                <summary>
+                  Career
+                  <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                </summary>
+                <ul>
+                  <li><a href="join-us.html">Join Us</a></li>
+                  <li><a href="happiness-at-plp.html">Happiness @ PLP</a></li>
+                  <li><a href="culture-gallery.html">Culture Gallery</a></li>
+                  <li><a href="open-positions.html">Open Positions</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li><a class="mobile-nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- HERO SECTION -->
+       <div class="container-fluid px-0 wrap-h-2">
+          <section class="hero">
+            <picture>
+
+              <!-- Retina Display -->
+               <source
+                srcset="assets/images/banner/banner-2560-900.webp"
+                media="(min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)"
+                type="image/webp"
+              >
+
+              <!-- Desktop -->
+              <source
+                srcset="assets/images/banner/banner-1600-600.webp"
+                media="(min-width: 1024px)"
+                type="image/webp"
+              >
+
+              <!-- Tablet -->
+              <source
+                srcset="assets/images/banner/banner-1024-500.webp"
+                media="(min-width: 600px)"
+                type="image/webp"
+              >
+
+              <!-- Mobile -->
+              <source
+                srcset="assets/images/banner/banner-600-400.webp"
+                media="(max-width: 599.98px)"
+                type="image/webp"
+              >
+
+              <!-- Fallback & Critical Attributes -->
+              <img
+                src="assets/images/banner/banner-1600-600.webp"
+                alt="Pinaka Law Partners - Where Legal Strategy Meets Trusted Advocacy"
+                width="1600"
+                height="600"
+                fetchpriority="high"
+                decoding="async"
+              >
+            </picture>
+
+            <!-- Banner Content Overlay -->
+            <div class="hero-content pe-lg-5 ">
+              <h1 class="text-white text-end text-lg-start">Where <span class="accent">Legal</span> Strategy Meets Trusted <span class="accent">Advocacy</span></h1>
+              <p class="text-white text-end text-lg-start">Pinaka Law Partners provides expert advocacy and practical solutions across criminal, civil, matrimonial, and corporate law.</p>
+              <div class="d-flex justify-content-end">
+                 <a href="#" class="btn text-white border-white">Consult Our Team</a>    
+              </div>
+
+            </div>
+          </section>
+       </div>
+
+        <!-- Disclaimer Strip -->
+        <section class="container-fluid marquee-bar px-0">
+       
+            <div class="row">
+              <div class="col-12 px-0">
+                <div class="swiper continuous-swiper" aria-label="Disclaimer ticker">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <p class="marquee-item mb-0">
+                        The information on this website is provided only in response to a specific request for general information about Pinaka Law Partners. It is not legal advice and does not create a lawyer-client relationship. By continuing to browse, you acknowledge that you are seeking information for your own knowledge and use. For legal issues, independent legal counsel should be sought
+                      </p>
+                    </div>
+                    <div class="swiper-slide" aria-hidden="true">
+                      <p class="marquee-item mb-0">
+                        The information on this website is provided only in response to a specific request for general information about Pinaka Law Partners. It is not legal advice and does not create a lawyer-client relationship. By continuing to browse, you acknowledge that you are seeking information for your own knowledge and use. For legal issues, independent legal counsel should be sought
+                      </p>
+                    </div>
+                    <div class="swiper-slide" aria-hidden="true">
+                      <p class="marquee-item mb-0">
+                        The information on this website is provided only in response to a specific request for general information about Pinaka Law Partners. It is not legal advice and does not create a lawyer-client relationship. By continuing to browse, you acknowledge that you are seeking information for your own knowledge and use. For legal issues, independent legal counsel should be sought
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+       
+        </section>
+
+
+
+
+        <!-- About the Firm -->
+        <section class="plp-about section-sm">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-xl-10">
+                <div class="plp-section-head mb-4">
+                  <p class="plp-kicker mb-2">About the Firm</p>
+                  <h2 class="mb-0">About Pinaka Law Partners</h2>
+                </div>
+                <p class="mb-3 text-justify">
+                  Pinaka Law Partners is built on a simple belief: legal support should be strategic, dependable, and deeply client-focused. We combine strong legal knowledge with a thoughtful understanding of each client&apos;s goals, concerns, and priorities.
+                </p>
+                <p class="mb-3 text-justify">
+                  Our firm offers tailored legal solutions across criminal law, NDPS matters, civil litigation, matrimonial disputes, cyber issues, and corporate advisory. Every matter is approached with care, precision, and commitment, ensuring our clients receive clear guidance and strong representation at every stage.
+                </p>
+                <p class="mb-0 text-justify">
+                  At Pinaka Law Partners, we aim to do more than solve legal problems. We work to become a trusted partner who stands with you through complexity, protects your interests, and helps you move forward with confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Practice Areas / Expertise -->
+        <section class="plp-expertise section-sm">
+          <div class="container">
+            <div class="row justify-content-center mb-4">
+              <div class="col-12 col-xl-10">
+                <p class="plp-kicker mb-2">Practice Areas</p>
+                <h2 class="mb-3">Our Expertise</h2>
+                <p class="mb-0 text-justify">
+                  At Pinaka Law Partners, we handle a wide spectrum of legal matters with specialized knowledge and practical strategy. Our practice is designed to support individuals, families, and businesses with clear, reliable legal solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="plp-practice-card h-100 p-4">
+                  <h3 class="h4 mb-3">Criminal Law</h3>
+                  <p class="mb-0">
+                    We provide strong legal representation in criminal matters, including investigations, trials, bail, appeals, and defense strategy. Our focus is on protecting rights and ensuring a diligent, well-prepared approach in every case.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="plp-practice-card h-100 p-4">
+                  <h3 class="h4 mb-3">NDPS Matters</h3>
+                  <p class="mb-0">
+                    We advise and represent clients in matters under the NDPS Act with careful attention to legal procedure, compliance, and defense strategy in sensitive and high-stakes cases.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="plp-practice-card h-100 p-4">
+                  <h3 class="h4 mb-3">Civil Litigation</h3>
+                  <p class="mb-0">
+                    Our civil practice includes property disputes, contracts, recovery matters, tenancy issues, and other disputes where practical legal direction and effective representation are essential.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="plp-practice-card h-100 p-4">
+                  <h3 class="h4 mb-3">Matrimonial Law</h3>
+                  <p class="mb-0">
+                    We assist clients with divorce, separation, maintenance, custody, guardianship, and related family matters with sensitivity, discretion, and a firm commitment to fair outcomes.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="plp-practice-card h-100 p-4">
+                  <h3 class="h4 mb-3">Cyber Crime</h3>
+                  <p class="mb-0">
+                    We handle cyber-related legal issues such as online fraud, identity theft, defamation, hacking, and other digital disputes with a modern and informed legal approach.
+                  </p>
+                </article>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <article class="plp-practice-card h-100 p-4">
+                  <h3 class="h4 mb-3">Corporate Advisory</h3>
+                  <p class="mb-0">
+                    We support businesses with advisory, compliance, and dispute-related legal solutions that help them operate with clarity and confidence.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Leadership Spotlight -->
+        <section class="plp-leadership section-sm">
+          <div class="container">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-12 col-lg-5">
+                <div class="plp-section-head h-100 d-flex flex-column justify-content-center">
+                  <p class="plp-kicker mb-2">Leadership Spotlight</p>
+                  <h2 class="mb-3">Leadership</h2>
+                  <p class="mb-0 text-justify">
+                    Pinaka Law Partners is guided by experienced professionals who combine legal insight with practical judgment and a strong sense of responsibility toward clients.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-7">
+                <article class="plp-highlight-card p-4 p-lg-5 h-100">
+                  <h3 class="h4 mb-1">Sujeet Kumar Singh</h3>
+                  <p class="plp-role mb-3">Managing Partner, Pinaka Law Partners</p>
+                  <p class="mb-3 text-justify">
+                    Sujeet Kumar Singh is the driving force behind the firm, bringing extensive legal knowledge and a clear strategic vision to the practice. With qualifications in B.A. LLB and LLM in Criminal Law, he has developed strong expertise across criminal law, civil litigation, and corporate legal advisory.
+                  </p>
+                  <p class="mb-0 text-justify">
+                    As Managing Partner, he believes in building a firm where legal excellence and client trust go hand in hand. His leadership reflects discipline, collaboration, and a commitment to delivering meaningful results with integrity and professionalism.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="plp-why section-sm">
+          <div class="container">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-12 col-lg-7">
+                <div class="plp-section-head mb-3">
+                  <p class="plp-kicker mb-2">Why Choose Us</p>
+                  <h2 class="mb-0">Why Pinaka Law Partners</h2>
+                </div>
+                <p class="mb-3 text-justify">
+                  We approach every matter with the belief that effective legal service must be both intelligent and personal. Our work is shaped by integrity, transparency, and a relentless focus on client needs.
+                </p>
+                <p class="mb-3 text-justify">
+                  We bring together diverse legal experience, practical strategy, and a commitment to clear communication. Clients choose us because they want a team that listens carefully, responds thoughtfully, and works with purpose.
+                </p>
+                <p class="mb-0 text-justify">
+                  At Pinaka Law Partners, we do not view legal matters as routine files. We treat them as important responsibilities that deserve attention, precision, and the highest professional standards.
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-5">
+                <aside class="plp-values-card p-4 h-100">
+                  <h3 class="h5 mb-3">What Clients Value Most</h3>
+                  <ul class="plp-tick-list mb-0">
+                    <li>Clear legal strategy aligned with client goals</li>
+                    <li>Transparent communication at every stage</li>
+                    <li>Disciplined, detail-oriented representation</li>
+                    <li>Balanced legal and practical judgment</li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Team Preview -->
+        <section class="plp-team section-sm">
+          <div class="container">
+            <div class="row justify-content-center mb-4">
+              <div class="col-12 col-xl-10 text-center text-lg-start">
+                <p class="plp-kicker mb-2">Team Preview</p>
+                <h2 class="mb-3">Our Team</h2>
+                <p class="mb-0 text-justify">
+                  Our team includes professionals with focused expertise across key legal areas, working together to provide efficient and well-rounded support.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-3 g-lg-4">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <article class="plp-member-card p-4 h-100">
+                  <h3 class="h5 mb-1">Sujeet Kumar Singh</h3>
+                  <p class="mb-0">Criminal Law, NDPS</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <article class="plp-member-card p-4 h-100">
+                  <h3 class="h5 mb-1">Abhinav Singh</h3>
+                  <p class="mb-0">Civil Law, DRT</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <article class="plp-member-card p-4 h-100">
+                  <h3 class="h5 mb-1">Anmol Singh Sikarwar</h3>
+                  <p class="mb-0">Corporate Law</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <article class="plp-member-card p-4 h-100">
+                  <h3 class="h5 mb-1">Satyam Singh</h3>
+                  <p class="mb-0">Matrimonial Law, NI Act</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <article class="plp-member-card p-4 h-100">
+                  <h3 class="h5 mb-1">Ajeet Patel</h3>
+                  <p class="mb-0">Cyber Law</p>
+                </article>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <article class="plp-member-card p-4 h-100">
+                  <h3 class="h5 mb-1">CA Alok Kumar Singh</h3>
+                  <p class="mb-0">Tax Consultant</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-12 col-xl-10">
+                <p class="mb-0 text-justify">
+                  Together, our team brings a balanced mix of legal and advisory strength, helping us support clients across a wide range of matters with consistency and professionalism.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Spotlight / Updates Section -->
+        <section class="plp-spotlight section-sm">
+          <div class="container">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-12 col-lg-7">
+                <p class="plp-kicker mb-2">Spotlight / Updates</p>
+                <h2 class="mb-3">In the Spotlight</h2>
+                <p class="mb-0 text-justify">
+                  Stay informed with the latest updates, firm announcements, publications, events, and professional highlights from Pinaka Law Partners.
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-5">
+                <article class="plp-spotlight-note p-4 h-100">
+                  <p class="mb-0 text-justify">
+                    Here you will find our latest insights, media appearances, legal articles, event participation, and important updates from our team. This section reflects our ongoing commitment to thought leadership, professional growth, and meaningful engagement with the legal community.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Career Section -->
+        <section class="plp-career section-sm">
+          <div class="container">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-12 col-lg-7">
+                <p class="plp-kicker mb-2">Career Section</p>
+                <h2 class="mb-3">Happiness @ PLP</h2>
+                <p class="mb-3 text-justify">
+                  At Pinaka Law Partners, we believe a strong firm is built by strong people. We value collaboration, learning, and a culture where every individual feels respected, supported, and encouraged to grow.
+                </p>
+                <p class="mb-0 text-justify">
+                  Our workplace is shaped by open communication, continuous upskilling, shared knowledge, and a healthy balance between professional ambition and personal well-being.
+                </p>
+              </div>
+
+              <div class="col-12 col-lg-5">
+                <article class="plp-career-panel p-4 h-100">
+                  <p class="mb-0 text-justify">
+                    From team celebrations to cultural moments and learning opportunities, we create an environment where people can do meaningful work and build meaningful careers. Join us and become part of a firm where growth, trust, and excellence matter equally.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+     <footer >
+      <div class="container-fluid footer">
+          <!-- Contact CTA -->
+          <section class="plp-contact-cta section-sm pt-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="plp-contact-card p-4 p-lg-5">
+                    <div class="row g-4 align-items-center">
+                      <div class="col-12 col-lg-8">
+                        <p class="plp-kicker mb-2">Contact CTA</p>
+                        <h2 class="mb-3">Contact Us</h2>
+                        <p class="mb-3 text-justify">
+                          Whether you need legal guidance, strategic support, or a trusted professional opinion, our team is ready to assist you with clarity and care.
+                        </p>
+                        <p class="mb-0">
+                          <span class="fw-semibold">Phone:</span>
+                          <a class="plp-contact-phone ms-2" href="tel:+917289934281">7289934281</a>
+                        </p>
+                      </div>
+
+                      <div class="col-12 col-lg-4 text-lg-end">
+                        <a class="btn btn-gold" href="tel:+917289934281">Call Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <p class="text-center m-0 pb-2">&copy; 2026 Pinaka Law Partners. All rights reserved.</p>
+          <p class="text-center m-0 pb-2 text-sm">Developed by <a href="https://chandrajit.space/" rel="noopener" target="_blank" title="Visit developer profile">Chandrajit</a></p>
+      </div>
+
+     </footer>
+
+    <!-- CUSTOM JS -->
+    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- BOOTSTRAP  JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
