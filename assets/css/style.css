@@ -874,22 +874,17 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+  border-bottom: 10px solid transparent;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .plp-practice-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(200, 169, 107, .55);
+  border-color: #3e3e3e;
 }
-
-.plp-practice-card h3 {
-  color: var(--color-primary);
-}
-
-.plp-practice-card p {
-  color: var(--color-muted);
-}
+.plp-practice-card h3{color: var(--color-primary);}
+.plp-practice-card p{color: var(--color-muted);}
 
 
 /* Leadership Spotlight  */
