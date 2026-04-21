@@ -1818,6 +1818,141 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 
 
 
+/* Expertise Criminal Law Starts here */
+
+.plp-criminal-law {
+  background: linear-gradient(180deg, #f7f7f5 0%, #ffffff 100%);
+}
+
+.plp-criminal-law p:not(.plp-kicker) {
+  color: var(--color-muted);
+}
+
+.plp-criminal-focus {
+  background: #fcfaf5;
+  border: 1px solid #e9dcc7;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.plp-criminal-focus h3 {
+  color: var(--color-primary);
+}
+
+.plp-criminal-points {
+  display: grid;
+  gap: .8rem;
+}
+
+.plp-criminal-points li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+.plp-criminal-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .62rem;
+  width: .48rem;
+  height: .48rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.plp-criminal-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.plp-criminal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(168, 132, 67, .42);
+}
+
+.plp-criminal-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--color-accent-strong);
+  border: 1px solid rgba(200, 169, 107, .35);
+  background: linear-gradient(135deg, rgba(200, 169, 107, .20), rgba(200, 169, 107, .08));
+}
+
+.plp-criminal-card h3 {
+  color: var(--color-primary);
+}
+
+.plp-criminal-card p {
+  color: var(--color-muted);
+}
+
+.plp-criminal-cta {
+  background: linear-gradient(125deg, #0f172a 0%, #1f2937 100%);
+  border: 1px solid rgba(200, 169, 107, .32);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.plp-criminal-cta h3 {
+  color: var(--color-white);
+}
+
+.plp-criminal-cta p {
+  color: rgba(255, 255, 255, .82);
+  max-width: 780px;
+}
+
+.plp-criminal-cta .btn {
+  min-width: 190px;
+  border: 1px solid rgba(255, 255, 255, .42);
+  color: var(--color-white);
+}
+
+.plp-criminal-cta .btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+@media (max-width: 991px) {
+  .plp-criminal-focus,
+  .plp-criminal-card,
+  .plp-criminal-cta {
+    padding: 1.25rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .plp-criminal-cta .btn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/* Expertise Criminal Law Ends here */
+
+
+
+
 
 /* footer css start ==================================================== */
 

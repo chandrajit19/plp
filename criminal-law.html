@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Law | Pinaka Law Partners</title>
+    <meta name="description" content="Pinaka Law Partners">
+    <script>
+        (function () {
+            try {
+                var key = "plp_disclaimer_ack_v1";
+                var isAccepted = window.localStorage.getItem(key) === "accepted";
+                document.documentElement.setAttribute("data-plp-disclaimer", isAccepted ? "accepted" : "pending");
+            } catch (error) {
+                document.documentElement.setAttribute("data-plp-disclaimer", "pending");
+            }
+        })();
+    </script>
+
+    <!-- FONT FAMILY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        media="print" onload="this.media = 'all'">
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- SWIPER SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="wrap-h-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-inner">
+                        <!-- SITE LOGO -->
+
+                        <div>
+                            <a href="index.html"><img class="site-logo" src="assets/images/site-logo.webp" width="250"
+                                    height="160" alt="Pinaka Law Partners logo"></a>
+                        </div>
+
+                        <!-- NAV MENU -->
+                        <nav class="nav-menu d-none d-lg-block" aria-label="Main navigation">
+                            <ul class="nav-list">
+                                <li><a class="nav-link-main" href="index.html">Home</a></li>
+
+                                <li class="has-dropdown" data-dropdown>
+                                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false"
+                                        aria-controls="about-dropdown">
+                                        Firm
+                                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu-custom" id="about-dropdown" aria-label="About Us submenu">
+                                        <li>
+                                            <a href="our-firm.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                About</a>
+                                        </li>
+                                        <li>
+                                            <a href="vision-values.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Leadership</a>
+                                        </li>
+                                        <li>
+                                            <a href="governance.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Governance</a>
+                                        </li>
+                                        <li>
+                                            <a href="why-choose-us.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Why Choose Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- 
+                  <li class="has-dropdown" data-dropdown>
+                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false" aria-controls="leadership-dropdown">
+                      Leadership
+                      <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu-custom" id="leadership-dropdown" aria-label="Leadership submenu">
+                      <li><a href="managing-partner.html"><span><i class="fa-solid fa-angles-right"></i></span> Managing Partner</a></li>
+                      <li><a href="leadership-team.html"><span><i class="fa-solid fa-angles-right"></i></span> Leadership Team</a></li>
+                      <li><a href="founders-message.html"><span><i class="fa-solid fa-angles-right"></i></span> Founder's Message</a></li>
+                    </ul>
+                  </li> -->
+
+                                <li class="has-dropdown" data-dropdown>
+                                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false"
+                                        aria-controls="expertise-dropdown">
+                                        Expertise
+                                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu-custom" id="expertise-dropdown"
+                                        aria-label="Expertise submenu">
+                                        <li>
+                                            <a href="criminal-law.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Criminal Law</a>
+                                        </li>
+                                        <li>
+                                            <a href="ndps-matters.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                NDPS Matters</a>
+                                        </li>
+                                        <li>
+                                            <a href="civil-litigation.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Civil Litigation</a>
+                                        </li>
+                                        <li>
+                                            <a href="matrimonial-law.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Matrimonial Law</a>
+                                        </li>
+                                        <li>
+                                            <a href="cyber-crime.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Cyber Crime</a>
+                                        </li>
+                                        <li>
+                                            <a href="corporate-advisory.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Corporate Advisory</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown" data-dropdown>
+                                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false"
+                                        aria-controls="team-dropdown">
+                                        Team
+                                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu-custom" id="team-dropdown" aria-label="Team submenu">
+                                        <li>
+                                            <a href="partners.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Partners</a>
+                                        </li>
+                                        <li>
+                                            <a href="management-committee.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Management Committee</a>
+                                        </li>
+                                        <li>
+                                            <a href="associates.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Associates</a>
+                                        </li>
+                                        <li>
+                                            <a href="advisors.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Advisors</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown" data-dropdown>
+                                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false"
+                                        aria-controls="insights-dropdown">
+                                        Insights
+                                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu-custom" id="insights-dropdown"
+                                        aria-label="Insights submenu">
+                                        <li>
+                                            <a href="in-the-spotlight.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                In The Spotlight</a>
+                                        </li>
+                                        <li>
+                                            <a href="firm-updates.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Firm Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="media-publications.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Media & Publications</a>
+                                        </li>
+                                        <li>
+                                            <a href="articles.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Articles</a>
+                                        </li>
+                                        <li>
+                                            <a href="events-conferences.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Events & Conferences</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown" data-dropdown>
+                                    <button class="nav-dd-toggle nav-link-main" type="button" aria-expanded="false"
+                                        aria-controls="career-dropdown">
+                                        Career
+                                        <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul class="dropdown-menu-custom" id="career-dropdown" aria-label="Career submenu">
+                                        <li>
+                                            <a href="join-us.html">
+                                                <span><i class="fa-solid fa-angles-right"></i></span>
+                                                Join Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="happiness-at-plp.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Happiness @ PLP</a>
+                                        </li>
+                                        <li>
+                                            <a href="culture-gallery.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Culture Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="open-positions.html"><span><i
+                                                        class="fa-solid fa-angles-right"></i></span>
+                                                Open Positions</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="nav-link-main" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- CTA -->
+                        <div class="cta d-none d-lg-block">
+                            <a class="btn" href="tel:+917289934281" aria-label="Call us at +91 72899 34281">
+                                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                +917289934281
+                            </a>
+                        </div>
+
+                        <!-- HAMBURGER MENU-->
+                        <div class="hamburger-menu d-block d-lg-none">
+                            <button class="hamburger-box" type="button" aria-label="Toggle menu" aria-expanded="false"
+                                aria-controls="mobile-nav-panel">
+                                <span class="hamburger-line-1"></span>
+                                <span class="hamburger-line-2"></span>
+                                <span class="hamburger-line-3"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVBAR -->
+    <div class="mobile-nav-shell d-lg-none" id="mobile-nav-shell" hidden>
+        <button class="mobile-nav-backdrop" type="button" aria-label="Close mobile menu"></button>
+
+        <aside class="mobile-nav-panel" id="mobile-nav-panel" aria-label="Mobile navigation">
+            <div class="mobile-nav-top">
+                <a href="index.html" class="mobile-nav-logo-wrap" aria-label="Go to homepage">
+                    <img class="mobile-nav-logo" src="assets/images/site-logo.webp" width="180" height="115"
+                        alt="Pinaka Law Partners logo">
+                </a>
+            </div>
+
+            <nav class="mobile-nav-menu" aria-label="Mobile main navigation">
+                <ul class="mobile-nav-list">
+                    <li><a class="mobile-nav-link" href="index.html">Home</a></li>
+
+                    <li>
+                        <details class="mobile-submenu">
+                            <summary>
+                                About Us
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </summary>
+                            <ul>
+                                <li><a href="our-firm.html">Our Firm</a></li>
+                                <li><a href="vision-values.html">Vision & Values</a></li>
+                                <li><a href="governance.html">Governance</a></li>
+                                <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+
+                    <li>
+                        <details class="mobile-submenu">
+                            <summary>
+                                Expertise
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </summary>
+                            <ul>
+                                <li><a href="criminal-law.html">Criminal Law</a></li>
+                                <li><a href="ndps-matters.html">NDPS Matters</a></li>
+                                <li><a href="civil-litigation.html">Civil Litigation</a></li>
+                                <li><a href="matrimonial-law.html">Matrimonial Law</a></li>
+                                <li><a href="cyber-crime.html">Cyber Crime</a></li>
+                                <li>
+                                    <a href="corporate-advisory.html">Corporate Advisory</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details class="mobile-submenu">
+                            <summary>
+                                Team <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </summary>
+                            <ul>
+                                <li><a href="partners.html">Partners</a></li>
+                                <li>
+                                    <a href="management-committee.html">Management Committee</a>
+                                </li>
+                                <li><a href="associates.html">Associates</a></li>
+                                <li><a href="advisors.html">Advisors</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details class="mobile-submenu">
+                            <summary>
+                                Insights
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </summary>
+                            <ul>
+                                <li><a href="in-the-spotlight.html">In The Spotlight</a></li>
+                                <li><a href="firm-updates.html">Firm Updates</a></li>
+                                <li>
+                                    <a href="media-publications.html">Media & Publications</a>
+                                </li>
+                                <li><a href="articles.html">Articles</a></li>
+                                <li>
+                                    <a href="events-conferences.html">Events & Conferences</a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details class="mobile-submenu">
+                            <summary>
+                                Career
+                                <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                            </summary>
+                            <ul>
+                                <li><a href="join-us.html">Join Us</a></li>
+                                <li><a href="happiness-at-plp.html">Happiness @ PLP</a></li>
+                                <li><a href="culture-gallery.html">Culture Gallery</a></li>
+                                <li><a href="open-positions.html">Open Positions</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li><a class="mobile-nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+
+
+    <!-- sub-page start ============================================================-->
+    <section class="sub-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-end">
+                    <div class="sub-page-heading">
+                        <h1>Expertise</h1>
+                        <p><a href="/">Home</a> <i class="fa fa-angles-right"></i>
+                          Criminal Law
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sub-page end ==============================================================-->
+
+
+    <!-- Criminal Law Goes Here -->
+    <section class="plp-criminal-law section-sm">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-12 col-lg-7">
+                    <div class="plp-section-head mb-3">
+                        <p class="plp-kicker mb-2">Practice Area</p>
+                        <h2 class="mb-0">Criminal Law</h2>
+                    </div>
+                    <p class="mb-3 text-justify">
+                        Pinaka Law Partners brings extensive litigation and advisory experience in criminal law,
+                        representing individuals, professionals, and corporate clients in sensitive and high-stakes
+                        matters. We provide strategic legal guidance from the earliest stage of inquiry and
+                        investigation through trial proceedings and appellate remedies.
+                    </p>
+                    <p class="mb-0 text-justify">
+                        Our team handles offences under the Indian Penal Code, the Bharatiya Nyaya Sanhita, and allied
+                        criminal statutes with meticulous preparation and procedural discipline. Whether engaged for
+                        robust defense or complainant-side prosecution support, we focus on protecting legal rights,
+                        reputation, and long-term interests through clear strategy and effective courtroom
+                        representation.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <aside class="plp-criminal-focus p-4 h-100">
+                        <h3 class="h5 mb-3">Core Focus Areas</h3>
+                        <ul class="plp-criminal-points mb-0">
+                            <li>Offences under the Indian Penal Code and Bharatiya Nyaya Sanhita</li>
+                            <li>FIR strategy, anticipatory bail, and regular bail proceedings</li>
+                            <li>Investigation-stage representation and procedural safeguards</li>
+                            <li>Trial advocacy, cross-examination, and evidence-led defense</li>
+                            <li>Criminal appeals, revisions, and quashing petitions</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-1">
+                <div class="col-12 col-md-6">
+                    <article class="plp-criminal-card p-4 h-100">
+                        <span class="plp-criminal-icon mb-3"><i class="fa-solid fa-landmark"></i></span>
+                        <h3 class="h5 mb-2">Investigation & Pre-Trial Strategy</h3>
+                        <p class="mb-0">
+                            We advise at the earliest stage of criminal exposure, including notice response, police
+                            interaction strategy, and risk mitigation to protect client rights before charges advance.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="plp-criminal-card p-4 h-100">
+                        <span class="plp-criminal-icon mb-3"><i class="fa-solid fa-gavel"></i></span>
+                        <h3 class="h5 mb-2">Bail, Trial & Courtroom Representation</h3>
+                        <p class="mb-0">
+                            Our litigation team delivers focused representation in bail hearings and trial courts with
+                            strong pleadings, evidence analysis, and disciplined advocacy tailored to each matter.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="plp-criminal-card p-4 h-100">
+                        <span class="plp-criminal-icon mb-3"><i class="fa-solid fa-scale-balanced"></i></span>
+                        <h3 class="h5 mb-2">Appeals, Revisions & Quashing</h3>
+                        <p class="mb-0">
+                            We handle appellate and revisional remedies with careful record review, legal strategy, and
+                            timely filings to challenge adverse orders and protect client interests effectively.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="plp-criminal-card p-4 h-100">
+                        <span class="plp-criminal-icon mb-3"><i class="fa-solid fa-briefcase"></i></span>
+                        <h3 class="h5 mb-2">White-Collar & Corporate Criminal Matters</h3>
+                        <p class="mb-0">
+                            We support businesses and key managerial personnel in complex criminal disputes involving
+                            compliance exposure, commercial allegations, and reputation-sensitive proceedings.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div
+                        class="plp-criminal-cta p-4 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
+                        <div>
+                            <h3 class="h5 mb-2">Strategic Criminal Litigation Backed by Precision</h3>
+                            <p class="mb-0">
+                                Every criminal matter demands urgency, discretion, and detail. Our team combines
+                                careful legal analysis with courtroom readiness to deliver dependable representation at
+                                every stage.
+                            </p>
+                        </div>
+                        <a class="btn btn-outline text-dark" href="contact.html">Consult Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Criminal Law Ends  Here -->
+
+
+
+
+
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Footer About -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/images/site-logo.webp" alt="Company Logo" class="img-fluid">
+            </a>
+           <p class="footer-about">
+              Pinaka Law Partners is a trusted law firm committed to delivering strategic legal solutions with
+              integrity, transparency, and professionalism.
+            </p>
+
+          
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <div class="footer-widget">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> About Us</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Team</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Insights</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Career</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Practice / Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <div class="footer-widget">
+            <h4>Our Expertise</h4>
+            <ul>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Criminal Law</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> NDPS Matters</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Civil Litigation</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Matrimonial Law</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Cyber Crime</a></li>
+              <li><a href="#"><i class="fas fa-angle-right"></i> Corporate Advisory</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <p>307, Triveni Complex, Near Hira Sweets, Laxmi Nagar, New Delhi 110092</p>
+              </div>
+
+              <div class="footer-contact-item">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <div>
+                  <a href="tel:+91-7289934281">+91-7289934281</a>
+                  <!-- <a href="tel:+211915432132">+211 915 432 132</a> -->
+                </div>
+              </div>
+
+              <div class="footer-contact-item">
+                <span><i class="fas fa-envelope"></i></span>
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+              </div>
+
+                <div class="footer-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+              <!-- <div class="footer-contact-item">
+                <span><i class="fas fa-clock"></i></span>
+                <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-wrap">
+          <p class="mb-0">© 2026 All Rights Reserved by Pinaka Law Partners</p>
+          <div class="footer-bottom-links">
+            <p>Designed by <a href="#">Our Team</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- CUSTOM JS -->
+    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- BOOTSTRAP  JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
