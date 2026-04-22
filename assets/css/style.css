@@ -381,11 +381,7 @@ textarea:focus-visible {
 /* subpage banner start */
 
 .sub-page {
-  background: linear-gradient(120deg,
-      #3F3F3E 0%,
-      #2f2f2e 40%,
-      #3F3F3E 70%,
-      rgba(217, 184, 120, 0.15) 100%);
+background: linear-gradient(135deg, #0f0f10 0%, #161616 55%, #1d1a14 100%);
 
   position: relative;
   overflow: hidden;
@@ -508,7 +504,7 @@ textarea:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: .85rem;
+  gap:1.5rem;
 }
 
 .nav-list>li {
@@ -1448,17 +1444,8 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 }
 
 /* Career Section  */
-.plp-career {
-  background: linear-gradient(160deg, #0f172a 0%, #1f2937 100%);
-}
 
-.plp-career h2 {
-  color: var(--color-white);
-}
 
-.plp-career p {
-  color: rgba(255, 255, 255, .88);
-}
 
 .plp-career .plp-kicker {
   color: var(--color-accent);
@@ -1470,6 +1457,95 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   border-radius: var(--radius-md);
 }
 
+  .plp-career {
+            background-color: #f8f8f7;
+        }
+
+        .plp-career p {
+            color: #111827;
+            line-height: 1.8;
+        }
+
+        .plp-career h2,
+        .plp-career h3,
+        .plp-career h4 {
+            color: #0f172a;
+        }
+
+        .plp-feature-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            color: #111827;
+        }
+
+        .plp-feature-card h4 {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .plp-cta-card {
+            background-color: #ffffff;
+            border: 2px solid #c8a96b;
+            border-radius: 8px;
+            color: #111827;
+        }
+
+        .plp-cta-card h3 {
+            color: #0f172a;
+        }
+
+        .plp-form-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+
+        .plp-form-card h3 {
+            color: #0f172a;
+        }
+
+        .plp-form-card .form-label {
+            color: #111827;
+            font-weight: 500;
+        }
+
+        .plp-form-card .form-control {
+            border: 1px solid #e5e7eb;
+            color: #111827;
+            background-color: #ffffff;
+        }
+
+        .plp-form-card .form-control:focus {
+            border-color: #c8a96b;
+            box-shadow: 0 0 0 0.2rem rgba(200, 169, 107, 0.25);
+            color: #111827;
+        }
+
+        .plp-form-card .form-control::placeholder {
+            color: #6b7280;
+        }
+
+        .btn-primary {
+            background-color: #0f172a;
+            border-color: #0f172a;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #c8a96b;
+            border-color: #c8a96b;
+            color: #0f172a;
+        }
+
+        .plp-section-head {
+            color: #0f172a;
+        }
+
+        .plp-section-head .plp-kicker {
+            color: #c8a96b;
+            font-weight: 600;
+        }
 
 
 /* Contact CTA  */
@@ -1568,7 +1644,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 .address-card {
   position: absolute;
   /* left: -50px; */
-  background-color: #808080;
+  background: linear-gradient(135deg, #0f0f10 0%, #161616 55%, #1d1a14 100%);
   height: 100%;
   display: flex;
   justify-content: center;
