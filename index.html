@@ -10,8 +10,8 @@
     <script>
       (function () {
         try {
-          var key = "plp_disclaimer_ack_v1";
-          var isAccepted = window.localStorage.getItem(key) === "accepted";
+          let key = "plp_disclaimer_ack_v1";
+          let isAccepted = window.localStorage.getItem(key) === "accepted";
           document.documentElement.setAttribute(
             "data-plp-disclaimer",
             isAccepted ? "accepted" : "pending",
@@ -95,13 +95,6 @@
               <div
                 class="d-flex flex-column flex-sm-row justify-content-sm-end gap-2 mt-4"
               >
-                <button
-                  type="button"
-                  class="btn btn-outline"
-                  data-disclaimer-decline
-                >
-                  Disagree
-                </button>
                 <button
                   type="button"
                   class="btn btn-gold"
@@ -235,6 +228,9 @@
                   </ul>
                 </li> -->
 
+                  <li>
+                    <a class="nav-link-main" href="leadership.html">Leadership</a>
+                  </li>
                   <li>
                     <a class="nav-link-main" href="career.html">Career</a>
                   </li>
@@ -699,49 +695,7 @@
         </div>
       </section>
 
-      <!-- Leadership Spotlight -->
-      <section class="plp-leadership section-sm">
-        <div class="container">
-          <div class="row g-4 align-items-stretch">
-            <div class="col-12 col-lg-5">
-              <div
-                class="plp-section-head h-100 d-flex flex-column justify-content-center"
-              >
-                <p class="plp-kicker mb-2">Leadership Spotlight</p>
-                <h2 class="mb-3">Leadership</h2>
-                <p class="mb-0 text-justify">
-                  Pinaka Law Partners is guided by experienced professionals who
-                  combine legal insight with practical judgment and a strong
-                  sense of responsibility toward clients.
-                </p>
-              </div>
-            </div>
 
-            <div class="col-12 col-lg-7">
-              <article class="plp-highlight-card p-4 p-lg-5 h-100">
-                <h3 class="h4 mb-1">Sujeet Kumar Singh</h3>
-                <p class="plp-role mb-3">
-                  Managing Partner, Pinaka Law Partners
-                </p>
-                <p class="mb-3 text-justify">
-                  Sujeet Kumar Singh is the driving force behind the firm,
-                  bringing extensive legal knowledge and a clear strategic
-                  vision to the practice. With qualifications in B.A. LLB and
-                  LLM in Criminal Law, he has developed strong expertise across
-                  criminal law, civil litigation, and corporate legal advisory.
-                </p>
-                <p class="mb-0 text-justify">
-                  As Managing Partner, he believes in building a firm where
-                  legal excellence and client trust go hand in hand. His
-                  leadership reflects discipline, collaboration, and a
-                  commitment to delivering meaningful results with integrity and
-                  professionalism.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Why Choose Us -->
       <section class="plp-why section-sm">
@@ -787,7 +741,8 @@
       </section>
 
       <!-- Team Preview -->
-      <section class="plp-team section-sm">
+       
+      <!-- <section class="plp-team section-sm">
         <div class="container">
           <div class="row justify-content-center mb-4">
             <div class="col-12 col-xl-10 text-center text-lg-start">
@@ -806,7 +761,6 @@
               <article class="card">
                 <figure class="card-figure">
                   <picture>
-                    <!-- Standard screens ke liye (1x) -->
                     <img
                       src="assets/images/profile/alok-kumar-singh.webp"
                       alt="Alok Kumar Singh profile picture"
@@ -829,7 +783,6 @@
               <article class="card">
                 <figure class="card-figure">
                   <picture>
-                    <!-- Standard screens ke liye (1x) -->
                     <img
                       src="assets/images/profile/anmol-singh.webp"
                       alt="Anmol Singh Sikarwar profile picture"
@@ -852,7 +805,6 @@
               <article class="card">
                 <figure class="card-figure">
                   <picture>
-                    <!-- Standard screens ke liye (1x) -->
                     <img
                       src="assets/images/profile/sujit-singh.webp"
                       alt="Sujit Singh profile picture"
@@ -875,7 +827,6 @@
               <article class="card">
                 <figure class="card-figure">
                   <picture>
-                    <!-- Standard screens ke liye (1x) -->
                     <img
                       src="assets/images/profile/satyam-singh.webp"
                       alt="Sujit Singh profile picture"
@@ -905,7 +856,8 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!-- Team Preview -->
 
       <!-- Testimonial Section Start -->
@@ -1239,22 +1191,22 @@
               <h4>Quick Links</h4>
               <ul>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Home</a>
+                  <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> About Us</a>
+                  <a href="about.html"><i class="fas fa-angle-right"></i> About Us</a>
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Team</a>
+                  <a href="team.html"><i class="fas fa-angle-right"></i> Team</a>
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Insights</a>
+                  <a href="insights.html"><i class="fas fa-angle-right"></i> Insights</a>
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Career</a>
+                  <a href="career.html"><i class="fas fa-angle-right"></i> Career</a>
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Contact</a>
+                  <a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a>
                 </li>
               </ul>
             </div>
@@ -1266,30 +1218,30 @@
               <h4>Our Expertise</h4>
               <ul>
                 <li>
-                  <a href="#"
+                  <a href="criminal-law.html"
                     ><i class="fas fa-angle-right"></i> Criminal Law</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="ndps-matters.html"
                     ><i class="fas fa-angle-right"></i> NDPS Matters</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="civil-litigation.html"
                     ><i class="fas fa-angle-right"></i> Civil Litigation</a
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="matrimonial-law.html"
                     ><i class="fas fa-angle-right"></i> Matrimonial Law</a
                   >
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-angle-right"></i> Cyber Crime</a>
+                  <a href="cyber-crime.html"><i class="fas fa-angle-right"></i> Cyber Crime</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="corporate-advisory.html"
                     ><i class="fas fa-angle-right"></i> Corporate Advisory</a
                   >
                 </li>
@@ -1333,7 +1285,7 @@
                 <span><i class="fas fa-clock"></i></span>
                 <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
               </div> -->
-              </div>
+              </div> 
             </div>
           </div>
         </div>
@@ -1346,7 +1298,7 @@
               © 2026 All Rights Reserved by Pinaka Law Partners
             </p>
             <div class="footer-bottom-links">
-              <p>Designed by <a href="https://sylgrin.in/" class="fst-italic border-bottom">Sylgrin Technologies</a></p>
+              <p>Developed by <a href="https://sylgrin.in/" class="fst-italic border-bottom">Sylgrin Technologies</a></p>
             </div>
           </div>
         </div>
@@ -1359,7 +1311,7 @@
              </span>
        </div>
     </footer>
-
+  
     <!-- CUSTOM JS -->
     <script type="module" src="assets/js/main.js"></script>
 

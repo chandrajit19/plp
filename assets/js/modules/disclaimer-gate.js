@@ -4,9 +4,8 @@ export const initDisclaimerGate = () => {
   const root = document.documentElement;
   const gate = document.querySelector("#plp-disclaimer-gate");
   const acceptButton = gate?.querySelector("[data-disclaimer-accept]");
-  const declineButton = gate?.querySelector("[data-disclaimer-decline]");
 
-  if (!gate || !acceptButton || !declineButton) {
+  if (!gate || !acceptButton ) {
     return;
   }
 
@@ -51,10 +50,6 @@ export const initDisclaimerGate = () => {
   acceptButton.addEventListener("click", () => {
     setAccepted();
     closeGate();
-  });
-
-  declineButton.addEventListener("click", () => {
-    window.location.replace(REDIRECT_URL);
   });
 
   document.addEventListener("keydown", (event) => {
