@@ -86,8 +86,8 @@ p{
 :root {
   --color-primary: #0f172a;
   --color-primary-strong: #020617;
-  --color-accent: #c8a96b;
-  --color-accent-strong: #a88443;
+  --color-accent: #c18815;
+  --color-accent-strong: #97670e;
 
   --color-bg: #f8f8f7;
   --color-surface: #ffffff;
@@ -946,7 +946,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   text-transform: uppercase;
   letter-spacing: .12em;
   font-weight: 700;
-  color: var(--color-accent-strong);
+  color: #a16b00;
 }
 
 .plp-about {
@@ -1357,7 +1357,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 .plp-role {
   font-size: .95rem;
   font-weight: 600;
-  color: var(--color-accent-strong) !important;
+  color: #a16b00!important;
 }
 
 
@@ -1448,7 +1448,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 
 
 .plp-career .plp-kicker {
-  color: var(--color-accent);
+  color: #a16b00;
 }
 
 .plp-career-panel {
@@ -1543,7 +1543,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
         }
 
         .plp-section-head .plp-kicker {
-            color: #c8a96b;
+            color: #a16b00;;
             font-weight: 600;
         }
 
@@ -1555,6 +1555,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  margin-top: 2rem;
 }
 
 .plp-contact-card p:not(.plp-kicker) {
@@ -1675,12 +1676,13 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   margin-bottom: 15px;
 }
 
-.address-card i {
+.add-p span{width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;}
+/* .address-card i {
   padding: 10px;
   border-radius: 50%;
   border: 1px solid #fff;
   padding-right: 25px;
-}
+} */
 
 .address-card a {
   text-decoration: none;
@@ -1696,20 +1698,22 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 }
 
 .form form input {
-  width: 100%;
-  font-size: 12px;
-  margin-bottom: 10px;
-  padding: 10px 10px;
-  border: none;
-  border-bottom: 2px solid rgb(210, 210, 210);
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 1px solid rgb(230 187 0);
+    background: transparent;
 }
 
 .form form textarea {
   margin-bottom: 10px;
   border: none;
   padding: 10px 10px;
-  border-bottom: 2px solid #0000;
+  border-bottom: 1px solid rgb(230 187 0);
   font-size: 12px;
+  background: transparent;
 }
 
 .form form input:focus,
@@ -1770,7 +1774,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   }
 
   .address-card i {
-    padding: 8px;
+    /* padding: 8px; */
     font-size: 12px;
   }
 
@@ -2003,6 +2007,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 .footer-social {
   display: flex;
   gap: 12px;
+  justify-content: center;
 }
 
 .footer-social a {
@@ -2135,7 +2140,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 
 .footer-bottom {
   border-top: 1px solid rgba(201, 162, 39, 0.18);
-  margin-top: 65px;
+  margin-top: 2rem;
   padding: 22px 0;
   background: rgba(0, 0, 0, 0.22);
 }
@@ -2211,7 +2216,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 
 @media (max-width: 575px) {
   .custom-footer {
-    padding-top: 55px;
+    padding-top: 2rem;
   }
 
   .footer-widget h4 {

@@ -287,7 +287,8 @@
     </div>
 
 
-    <!-- sub-page start ============================================================-->
+<main>
+      <!-- sub-page start ============================================================-->
     <section class="sub-page">
         <div class="container">
             <div class="row">
@@ -303,10 +304,6 @@
     </section>
     <!-- sub-page end ==============================================================-->
 
-
-
-
-
     <!-- contact us start =============================================================-->
     <section class="contact-us mt-5">
         <div class="container">
@@ -318,14 +315,19 @@
                             <div class="col-lg-4 position-relative">
                                 <div class="address-card">
                                     <h3>Contact Information</h3>
-
-                                    <p class="add-p"><i title="email" class="fa fa-envelope"></i>
-                                        info@yourdomain.com
-                                    </p>
-                                   
-                                    <p class="add-p"><i title="phone" class="fa fa-phone"></i> +91-7289934281</p>
-
-                                    <p class="add-p"><i title="address" class="fa fa-location"></i> 307, Triveni Complex, Near Hira Sweets, Laxmi Nagar, New Delhi 110092</p>
+                                        <ul class="add-p text-white d-flex flex-column gap-3">
+                                            <li class="d-flex gap-2">
+                                                <span class=" border rounded-pill"><i title="email" class="fa fa-envelope"></i></span> 
+                                                info@yourdomain.com
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                <span class=" border rounded-pill"><i title="phone" class="fa fa-phone"></i></span> 
+                                                +91-7289934281
+                                            </li>
+                                            <li class="d-flex gap-2">
+                                                307, Triveni Complex, Near Hira Sweets, Laxmi Nagar, New Delhi 110092
+                                            </li>
+                                        </ul>
 
                                 </div>
                             </div>
@@ -382,11 +384,10 @@
     <!-- map end -->
 
 
+</main>
 
 
-
-<!-- Footer -->
-
+    <!-- Footer -->
     <footer class="custom-footer position-relative">
       <div class="container">
         <div class="row gy-5">
@@ -411,7 +412,7 @@
           <!-- Quick Links -->
           <div class="col-lg-2 col-md-6 col-6">
             <div class="footer-widget">
-              <h4>Quick Links</h4>
+              <h2 class="h4">Quick Links</h2>
               <ul>
                 <li>
                   <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
@@ -431,6 +432,9 @@
                 <li>
                   <a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a>
                 </li>
+                <li>
+                  <a href="leadership.html"><i class="fas fa-angle-right"></i> Leadership</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -438,7 +442,7 @@
           <!-- Practice / Services -->
           <div class="col-lg-3 col-md-6 col-6">
             <div class="footer-widget">
-              <h4>Our Expertise</h4>
+              <h2 class="h4">Our Expertise</h2>
               <ul>
                 <li>
                   <a href="criminal-law.html"
@@ -475,7 +479,7 @@
           <!-- Contact -->
           <div class="col-lg-3 col-md-6">
             <div class="footer-widget">
-              <h4>Contact Us</h4>
+              <h2 class="h4">Contact Us</h2>
               <div class="footer-contact">
                 <div class="footer-contact-item">
                   <span><i class="fas fa-map-marker-alt"></i></span>
@@ -489,28 +493,34 @@
                   <span><i class="fas fa-phone-alt"></i></span>
                   <div>
                     <a href="tel:+91-7289934281">+91-7289934281</a>
-                    <!-- <a href="tel:+211915432132">+211 915 432 132</a> -->
                   </div>
                 </div>
 
                 <div class="footer-contact-item">
                   <span><i class="fas fa-envelope"></i></span>
-                  <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                  <a href="mailto:support@pinakalawpartners.com">support@pinakalawpartners.com</a>
                 </div>
 
-                <div class="footer-social">
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-x-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </div>
 
-                <!-- <div class="footer-contact-item">
-                <span><i class="fas fa-clock"></i></span>
-                <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
-              </div> -->
               </div> 
             </div>
           </div>
+        </div>
+
+        <div class="col-12 mt-lg-5 mt-4 text-center">
+                      
+            <div class="footer-social">
+                <a href="#" aria-label="Follow us on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Follow us on X (formerly Twitter)">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+            </div>
+
         </div>
       </div>
 
@@ -529,9 +539,12 @@
 
       <!-- whtasapp -->
        <div class="position-fixed end-0 bottom-0 p-3">
-             <span class="p-1 d-inline-block bg-success rounded-pill">
-              <a href="https://wa.me/7289934281" class="text-white h1"><i class="fa-brands fa-whatsapp"></i></a>
-             </span>
+          <span class="p-1 d-inline-block bg-success rounded-pill">
+            <a href="https://wa.me" class="text-white h1" aria-label="Chat with us on WhatsApp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+</span>
+
        </div>
     </footer>
   
