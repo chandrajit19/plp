@@ -895,6 +895,14 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
   min-width: 170px;
 }
 
+.plp-disclaimer-card .plp-disclaimer-decline {
+  align-self: flex-end;
+  min-width: auto;
+  padding: .4rem .85rem;
+  font-size: .78rem;
+  outline: none;
+}
+
 
 /* Disclaimer Strip  */
 /* .plp-disclaimer-strip{
@@ -1750,6 +1758,7 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
     left: auto;
     height: auto;
     border-radius: var(--radius-sm);
+    font-size: .8rem;
   }
 
   .form {
@@ -2314,6 +2323,10 @@ html[data-plp-disclaimer="accepted"] .plp-disclaimer-gate {
 
   .plp-disclaimer-card .btn {
     min-width: 100%;
+  }
+
+  .plp-disclaimer-card .plp-disclaimer-decline {
+    min-width: auto;
   }
 
   .plp-disclaimer-strip p {
